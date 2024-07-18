@@ -28,6 +28,7 @@
   <!-- Template Main CSS Files -->
   <link href="assets/css/variables.css" rel="stylesheet">
   <link href="assets/css/main.css" rel="stylesheet">
+  <link href="paciente.css" rel="stylesheet">
 
   <!-- =======================================================
   * Template Name: ZenBlog
@@ -94,63 +95,66 @@
 
   <main id="main">
 
-    <h1>Registrar Nuevo Paciente</h1>
-    <form action="" method="post">
-        <label for="nombre">Nombre:</label>
-        <input type="text" id="nombre" name="nombre" required><br><br>
-        
-        <label for="edad">Edad:</label>
-        <input type="number" id="edad" name="edad" required><br><br>
-        
-        <!-- Otros campos para detalles del paciente (ej. condición médica, etc.) -->
-        
-        <input type="submit" value="Registrar Paciente">
-    </form>
-    <br>
-    <button onclick="location.href='gestionar_ingreso.html'">Volver</button>
-
-    <h1>Registrar Información de Medicamentos y Dosis</h1>
-    <form action="" method="post">
-        <label for="paciente">Paciente:</label>
-        <input type="text" id="paciente" name="paciente" required><br><br>
-        
-        <label for="medicamentos">Medicamentos:</label><br>
-        <textarea id="medicamentos" name="medicamentos" rows="4" cols="50" required></textarea><br><br>
-        
-        <label for="dosis">Dosis:</label><br>
-        <textarea id="dosis" name="dosis" rows="4" cols="50" required></textarea><br><br>
-        
-        <input type="submit" value="Registrar">
-    </form>
-    <br>
-    <button onclick="location.href='gestionar_datos_paciente.html'">Volver</button>
-
-    <h1>Ingresar Datos Familiares</h1>
-    <form action="" method="post">
-        <label for="paciente">Paciente:</label>
-        <input type="text" id="paciente" name="paciente" required><br><br>
-        
-        <label for="familiares">Información de Familiares:</label><br>
-        <textarea id="familiares" name="familiares" rows="4" cols="50" required></textarea><br><br>
-        
-        <input type="submit" value="Ingresar">
-    </form>
-    <br>
-    <button onclick="location.href='gestionar_datos_paciente.html'">Volver</button>
-
-    <h1>Registrar Cuidados</h1>
-    <form action="" method="post">
-        <label for="paciente">Paciente:</label>
-        <input type="text" id="paciente" name="paciente" required><br><br>
-        
-        <label for="cuidados">Detalles de Cuidados:</label><br>
-        <textarea id="cuidados" name="cuidados" rows="4" cols="50" required></textarea><br><br>
-        
-        <input type="submit" value="Registrar">
-    </form>
-    <br>
-    <button onclick="location.href='gestionar_datos_paciente.html'">Volver</button>
-
+    <div class="form-container">
+        <h1>Registrar Nuevo Paciente</h1>
+        <form class="patient-form" action="" method="post">
+          <label for="nombre">Nombre:</label>
+          <input type="text" id="nombre" name="nombre" required><br><br>
+    
+          <label for="edad">Edad:</label>
+          <input type="number" id="edad" name="edad" required><br><br>
+    
+          <!-- Otros campos para detalles del paciente (ej. condición médica, etc.) -->
+    
+          <input type="submit" value="Registrar Paciente">
+        </form>
+        <button onclick="location.href='gestionar_ingreso.html'">Volver</button>
+      </div>
+    
+      <div class="form-container">
+        <h1>Registrar Información de Medicamentos y Dosis</h1>
+        <form class="medicamentos-form" action="" method="post">
+          <label for="paciente">Paciente:</label>
+          <input type="text" id="paciente" name="paciente" required><br><br>
+    
+          <label for="medicamentos">Medicamentos:</label><br>
+          <textarea id="medicamentos" name="medicamentos" rows="4" cols="50" required></textarea><br><br>
+    
+          <label for="dosis">Dosis:</label><br>
+          <textarea id="dosis" name="dosis" rows="4" cols="50" required></textarea><br><br>
+    
+          <input type="submit" value="Registrar">
+        </form>
+        <button onclick="location.href='gestionar_datos_paciente.html'">Volver</button>
+      </div>
+    
+      <div class="form-container">
+        <h1>Ingresar Datos Familiares</h1>
+        <form class="familiares-form" action="" method="post">
+          <label for="paciente">Paciente:</label>
+          <input type="text" id="paciente" name="paciente" required><br><br>
+    
+          <label for="familiares">Información de Familiares:</label><br>
+          <textarea id="familiares" name="familiares" rows="4" cols="50" required></textarea><br><br>
+    
+          <input type="submit" value="Ingresar">
+        </form>
+        <button onclick="location.href='gestionar_datos_paciente.html'">Volver</button>
+      </div>
+    
+      <div class="form-container">
+        <h1>Registrar Cuidados</h1>
+        <form class="cuidados-form" action="" method="post">
+          <label for="paciente">Paciente:</label>
+          <input type="text" id="paciente" name="paciente" required><br><br>
+    
+          <label for="cuidados">Detalles de Cuidados:</label><br>
+          <textarea id="cuidados" name="cuidados" rows="4" cols="50" required></textarea><br><br>
+    
+          <input type="submit" value="Registrar">
+        </form>
+        <button onclick="location.href='gestionar_datos_paciente.html'">Volver</button>
+      </div>
 </body>
 </main><!-- End #main -->
 

@@ -1,0 +1,40 @@
+.aporte-form-container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+  }
+  
+  .aporte-form-container h4 {
+    margin-bottom: 15px;
+    text-align: center;
+  }
+  
+  .aporte-form-control {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .aporte-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .aporte-btn:hover {
+    background-color: #0056b3;
+  }
+  
+  .aporte-result {
+    margin-top: 15px;
+    text-align: center;
+  }

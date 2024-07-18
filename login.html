@@ -28,6 +28,7 @@
   <!-- Template Main CSS Files -->
   <link href="assets/css/variables.css" rel="stylesheet">
   <link href="assets/css/main.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 
   <!-- =======================================================
   * Template Name: ZenBlog
@@ -95,17 +96,22 @@
   <main id="main">
 
 
-<h2>Inicio de Sesión</h2>
-<form>
-    <div class="form-group">
-        <label for="loginEmail">Correo Electrónico</label>
-        <input type="email" class="form-control" id="loginEmail" placeholder="Introduce tu correo">
+    <div class="login-form-container">
+        <h2>Inicio de Sesión</h2>
+        <form id="loginForm">
+            <div class="login-form-group">
+                <label for="loginEmail">Correo Electrónico</label>
+                <input type="email" class="login-form-control" id="loginEmail" placeholder="Introduce tu correo">
+            </div>
+            <div class="login-form-group">
+                <label for="loginPassword">Contraseña</label>
+                <input type="password" class="login-form-control" id="loginPassword" placeholder="Introduce tu contraseña">
+            </div>
+            <button type="submit" class="login-btn">Iniciar Sesión</button>
+        </form>
     </div>
-    <div class="form-group">
-        <label for="loginPassword">Contraseña</label>
-        <input type="password" class="form-control" id="loginPassword" placeholder="Introduce tu contraseña">
-    </div>
-    <button type="submit" class="btn btn-primary">Iniciar Sesión</button>
+
+    <script src="scripts.js"></script>
 
 </main><!-- End #main -->
 
